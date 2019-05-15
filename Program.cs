@@ -87,7 +87,7 @@ namespace FortuneTeller
                         Console.WriteLine("Your vacation home will be Las Angeles, CA");
                     }
                 
-
+             
 
                 if (color == "R")                                                                      //Favorite color
             {
@@ -119,15 +119,15 @@ namespace FortuneTeller
             }
 
 
-            if (bMonth == 1-4)                                                                       //Birth Month
+            if (bMonth >= 1 && bMonth <= 4)                                                                       //Birth Month
             {
                 Console.WriteLine("Your bank balance will be $1.00");
             }
-                if (bMonth == 5-8)
+                if (bMonth >= 5 && bMonth <= 8)
             {
                 Console.WriteLine("Your bank balance will be $1,000,000,000");
             }
-                if (bMonth == 9-12)
+                if (bMonth >= 9 && bMonth <= 12)
             {
                 Console.WriteLine("Your bank balance will be $1,000");
             }
@@ -135,12 +135,12 @@ namespace FortuneTeller
             {
                 Console.WriteLine("Your bank balance will be $0.00");
             }
-                if (bMonth != 1 - 12)
-            {
+                if (bMonth > 12)
+                {
 
-                Console.WriteLine("Your bank balance will be $0.00");
-            }
-
+                    Console.WriteLine("Your bank balance will be $0.00");
+                }
+            
 
 
             }
