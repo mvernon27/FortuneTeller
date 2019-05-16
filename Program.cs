@@ -22,7 +22,7 @@ namespace FortuneTeller
             Console.WriteLine("What is the numerical value of your birth-month?");
             int bMonth = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("What is your favorite ROYGBIV color? Type 'help' for color list or 'Enter' key to continue.");
+            Console.WriteLine("What is your favorite ROYGBIV color? Type in the first letter of the color you choose. Type 'help' for color list or 'Enter' key to continue.");
 
             if (Console.ReadLine() == "help")                                                                                           //Needs Loop
             {
@@ -61,18 +61,31 @@ namespace FortuneTeller
             }
 
 
+<<<<<<< HEAD
             if (bMonth >= 1 && bMonth <= 4)                                                                       //Birth Month
+=======
+                if (color.ToUpper().Equals ("R"))                                                                   //Favorite color
+>>>>>>> d1ae5250d5b70b762defad997ebe596e45f5f831
             {
                 Console.Write("$1.00 in the bank, ");
             }
+<<<<<<< HEAD
             if (bMonth >= 5 && bMonth <= 8)
+=======
+                if (color.ToUpper().Equals ("O"))
+>>>>>>> d1ae5250d5b70b762defad997ebe596e45f5f831
             {
                 Console.Write("$1,000,000,000 in the bank, ");
             }
+<<<<<<< HEAD
             if (bMonth >= 9 && bMonth <= 12)
+=======
+                if (color.ToUpper().Equals("Y"))
+>>>>>>> d1ae5250d5b70b762defad997ebe596e45f5f831
             {
                 Console.Write("$1,000 in the bank, ");
             }
+<<<<<<< HEAD
             if (bMonth < 0)
             {
                 Console.Write("$0.00 in the bank,");
@@ -85,18 +98,33 @@ namespace FortuneTeller
 
 
                 if (siblings > 4)                                                                     //Number of siblings
+=======
+                if (color.ToUpper().Equals("G"))
+>>>>>>> d1ae5250d5b70b762defad997ebe596e45f5f831
             {
                 Console.Write("a vacation home in Cleveland, OH, ");
             }
+<<<<<<< HEAD
             else if (siblings == 1)
+=======
+                if (color.ToUpper().Equals("B"))
+>>>>>>> d1ae5250d5b70b762defad997ebe596e45f5f831
             {
                     Console.Write("a vacation home in Detroit, MI, ");
             }
+<<<<<<< HEAD
             else if (siblings == 2)
+=======
+                if (color.ToUpper().Equals("I"))
+>>>>>>> d1ae5250d5b70b762defad997ebe596e45f5f831
             {
                 Console.Write("a vacation home in Chicago, IL, ");
             }
+<<<<<<< HEAD
             else if (siblings == 3)
+=======
+                if (color.ToUpper().Equals("V"))
+>>>>>>> d1ae5250d5b70b762defad997ebe596e45f5f831
             {
                 Console.Write("a vacation home in Columbus, OH, ");
             }
