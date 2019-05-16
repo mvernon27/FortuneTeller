@@ -22,7 +22,7 @@ namespace FortuneTeller
             Console.WriteLine("What is the numerical value of your birth-month?");
             int bMonth = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("What is your favorite ROYGBIV color? Type 'help' for color list or 'Enter' key to continue.");
+            Console.WriteLine("What is your favorite ROYGBIV color? Type in the first letter of the color you choose. Type 'help' for color list or 'Enter' key to continue.");
 
             if (Console.ReadLine() == "help")
             {
@@ -89,31 +89,31 @@ namespace FortuneTeller
                 
              
 
-                if (color == "R")                                                                      //Favorite color
+                if (color.ToUpper().Equals ("R"))                                                                   //Favorite color
             {
                 Console.WriteLine("Your mode of transportation will be bicycle.");
             }
-                if (color == "O")
+                if (color.ToUpper().Equals ("O"))
             {
                 Console.WriteLine("Your mode of transportation will be tricycle.");
             }
-                if (color == "Y")
+                if (color.ToUpper().Equals("Y"))
             {
                 Console.WriteLine("Your mode of transportation will be car.");
             }
-                if (color == "G")
+                if (color.ToUpper().Equals("G"))
             {
                 Console.WriteLine("Your mode of transportation will be truck.");
             }
-                if (color == "B")
+                if (color.ToUpper().Equals("B"))
             {
                 Console.WriteLine("Your mode of transportation will be rocket.");
             }
-                if (color == "I")
+                if (color.ToUpper().Equals("I"))
             {
                 Console.WriteLine("Your mode of transportation will be walking.");
             }
-                if (color == "V")
+                if (color.ToUpper().Equals("V"))
             {
                 Console.WriteLine("Your mode of transportation will be running.");
             }
